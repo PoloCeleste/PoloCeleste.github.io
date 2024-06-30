@@ -1,0 +1,157 @@
+﻿@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'D2Coding';
+    color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+  
+    padding-top: 250px;
+}
+
+#weather {
+    text-shadow: 1px 2px black;  
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    font-size: 1.2em;
+}
+.city {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-right: 5px;
+}
+.icon {
+    font-size: 0.9em;
+    margin-right: 4px;
+}
+
+#date {
+    font-size: 0.3em;
+    font-weight: 300;
+    text-shadow: 1px 2px black;
+    text-align: left;
+}
+.clock {
+    font-size: 7em;
+    text-shadow: 2px 3px black;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#greeting {
+    text-shadow: 2px 3px black;
+}
+
+.login_input {
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-top: 20px;
+    transition: border-color 0.5s ease-in-out;
+}
+.login_input:focus {
+    outline: none;
+    border-color: wheat;
+}
+.login_input:focus::placeholder {
+    opacity: 0;
+}
+.login_input::placeholder {
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 1px 2px black;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#quotes {
+    position: fixed;
+    left: 30px;
+    top: 10px;
+    font-size: 1.3em;
+    color: #ffffff;
+    text-shadow: 1px 2px black;
+}
+span .trans {
+    font-size: 0.8em;
+}
+
+.todo_input {
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    text-align: left;
+    border-bottom: 1px solid;
+    padding-top: 20px;
+    transition: border-color 0.5s ease-in-out;
+}
+.todo_input:focus {
+    outline: none;
+    border-color: wheat;
+}
+.todo_input:focus::placeholder {
+    opacity: 0;
+}
+.todo_input::placeholder {
+    color: #ffffff;
+    font-size: 22px;
+    text-shadow: 1px 2px black;
+    transition: opacity 0.5s ease-in-out;
+}
+.todo-list {  
+    padding-left: 20px;
+    width: 230px;
+  }
+.done {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+li {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    text-shadow: 1px 2px black;
+}
+li span {
+    font-size: 1.3em;
+}
+
+button {
+    position: absolute;
+    right: 0%;
+    font-size: 1.15em;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 5px 5px 4px black;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+button+button {
+    margin-right: 20px;
+}
+button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+    <title>TodoLIst_Celeste</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <span id="quotes">
+        <span></span><br>
+        <span class="trans"></span>
+    </span>
+    <span id="weather">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <span class="city"></span>
+        <span class="weather"></span>
+    </span>
+
+    <div class="clock">
+        <span id="date"></span><br>
+        <span id="clock"></span>
+    </div>
+    
+    <form id="login-form">
+        <input class="login_input" type="text" placeholder="Login Here" required="">
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form class="todo-form hidden">
+        <input class="todo_input" type="text" placeholder="해야할 일" required="">
+    </form>
+    <ul class="todo-list hidden"></ul>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/bg.js"></script>
+</body>
+</html>

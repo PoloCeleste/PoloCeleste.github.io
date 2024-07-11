@@ -22,6 +22,8 @@ function doneTodo(event){
     const li = event.target.parentElement;
     const target = li.querySelector("span");
     target.classList.toggle('done');
+    console.log(todos);
+    console.log(li);
 }
 
 function paintTodo(newTodo) {
@@ -45,10 +47,12 @@ function paintTodo(newTodo) {
 function handleTodoSubmit(event) {
     event.preventDefault();
     const newTodo = todoInput.value;
+    const doneTodo = false;
     todoInput.value = "";
     const newTodoObj = {
         text: newTodo,
         id: Date.now(),
+        done: doneTodo,
     };
     todos.push(newTodoObj);
     paintTodo(newTodoObj);
